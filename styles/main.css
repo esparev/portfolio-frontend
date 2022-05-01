@@ -30,7 +30,9 @@ body {
   font-size: 1.5rem; /* 1.5rem = 15px */
   background-color: var(--eerie-black);
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--inter);
   font-weight: var(--bold);
 }
@@ -147,6 +149,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 32px;
 }
 .form__title {
   width: 344px;
@@ -181,4 +184,26 @@ main {
 .form .button--red {
   display: block;
   width: 136px;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  height: 52px;
+  padding: 0 42px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--onyx);
+  border-top: 4px solid var(--crimson);
+  color: var(--cultured);
+}
+.footer__socials {
+  display: flex;
+}
+.footer__social-container:nth-child(2) {
+  margin: 0 12px;
+}
+.footer__social-container--img {
+  width: 20px;
+  height: 20px;
 }
