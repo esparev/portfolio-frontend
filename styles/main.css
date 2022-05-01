@@ -27,7 +27,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-size: 1.5rem; /* 1.5rem = 15px */
+  font-size: 1.6rem; /* 1.6rem = 16px */
   background-color: var(--eerie-black);
 }
 h1,
@@ -53,8 +53,11 @@ button {
 }
 .button {
   display: inline-block;
+  min-width: 144px;
+  margin: 6px;
   padding: 8px 12px;
   border-radius: 4px;
+  text-align: center;
   font-weight: var(--bold);
 }
 .button--red {
@@ -85,8 +88,11 @@ button {
 
 /* MAIN */
 main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100vw;
-  padding: 0 42px;
+  padding: 0 20px;
 }
 /* HERO */
 .hero {
@@ -122,6 +128,7 @@ main {
 .hero__buttons {
   display: flex;
   justify-content: center;
+  flex-flow: wrap;
 }
 
 /* EXPERIENCE */
@@ -135,7 +142,7 @@ main {
   border-bottom: 3px solid var(--cultured);
 }
 .experience__item {
-  margin: 12px 0;
+  margin: 24px 0;
 }
 .experience__item:first-child {
   margin-top: 0;
@@ -143,21 +150,26 @@ main {
 .experience__item:last-child {
   margin-bottom: 0;
 }
+.experience__item--title {
+  margin-bottom: 4px;
+}
 
 /* CONTACT */
 .form {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   margin-bottom: 32px;
 }
 .form__title {
-  width: 344px;
+  width: 100%;
   text-align: start;
   color: var(--cultured);
 }
 .form__input--subject {
-  width: 344px;
+  width: 100%;
+  max-width: 344px;
   height: 40px;
   margin: 16px 0;
   padding: 0 16px;
@@ -168,12 +180,14 @@ main {
   color: var(--cultured);
 }
 .form__input--message {
-  max-height: 100px;
-  min-height: 40px;
+  width: 100%;
   max-width: 344px;
-  min-width: 344px;
+  min-width: fit-content;
+  height: 100px;
+  max-height: 200px;
+  min-height: 40px;
   margin-bottom: 16px;
-  padding: 16px;
+  padding: 8px 16px 0;
   border: 2px solid var(--cultured);
   border-radius: 4px;
   background-color: var(--cultured-dark);
@@ -190,7 +204,7 @@ main {
 .footer {
   display: flex;
   height: 52px;
-  padding: 0 42px;
+  padding: 0 20px;
   justify-content: space-between;
   align-items: center;
   background-color: var(--onyx);
