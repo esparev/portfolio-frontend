@@ -28,6 +28,28 @@ body {
   font-size: 1.5rem; /* 1.5rem = 15px */
   background-color: var(--eerie-black);
 }
+h1, h2, h3 {
+  font-family: var(--inter);
+  font-weight: var(--bold);
+}
+a {
+  text-decoration: none;
+  color: var(--cultured);
+}
+.button {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: var(--bold);
+}
+.button--red {
+  background-color: var(--crimson);
+  color: var(--eerie-black);
+}
+.button--white {
+  background-color: var(--cultured);
+  color: var(--eerie-black);
+}
 
 /* HEADER */
 .header {
@@ -40,7 +62,49 @@ body {
   text-transform: uppercase;
   text-decoration: underline;
   letter-spacing: 3px;
+  font-family: var(--inter);
   font-size: 1.8rem;
   font-weight: var(--medium);
   color: var(--cultured);
+}
+
+/* MAIN */
+main {
+  width: 100vw;
+  padding: 0 42px;
+}
+/* HERO */
+.hero {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column-reverse;
+  align-items: center;
+}
+/* HERO PROFILE */
+.hero__profile {
+  width: 182px;
+  height: 182px;
+  margin: 32px 0;
+}
+.hero__profile--img {
+  width: 182px;
+  height: 182px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--crimson);
+}
+/* HERO CONTENT */
+.hero__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: var(--black);
+  color: var(--cultured);
+}
+.hero__text {
+  color: var(--cultured);
+  margin: 16px 0;
+}
+.hero__buttons {
+  display: flex;
+  justify-content: center;
 }
