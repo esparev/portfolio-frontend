@@ -108,3 +108,23 @@ main {
   display: flex;
   justify-content: center;
 }
+
+/* EXPERIENCE */
+.experience {
+  margin: 32px 0;
+  color: var(--cultured);
+}
+.experience__title {
+  display: inline-block;
+  margin-bottom: 16px;
+  border-bottom: 3px solid var(--cultured);
+}
+.experience__item {
+  margin: 12px 0;
+}
+.experience__item:first-child {
+  margin-top: 0;
+}
+.experience__item:last-child {
+  margin-bottom: 0;
+}
