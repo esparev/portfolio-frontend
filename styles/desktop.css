@@ -1,0 +1,54 @@
+/* MAIN */
+main {
+  padding: 0 15%;
+}
+/* HERO */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+/* HERO CONTENT */
+.hero__container {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 32px 0;
+  padding-right: 80px;
+}
+.hero__title {
+  text-align: start;
+}
+/* HERO PROFILE */
+.hero__profile {
+  width: 292px;
+  height: 292px;
+  margin: 0;
+}
+.hero__profile--img {
+  width: 292px;
+  height: 292px;
+}
+
+/* EXPERIENCE */
+.experience__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.experience__item:first-child {
+  margin-right: 76px;
+}
+.experience__item:last-child {
+  margin-left: 76px;
+}
+
+/* FORM */
+.form__title,
+.form__input--subject,
+.form__input--message {
+  max-width: 452px;
+  min-width: 452px;
+}
+
+/* FOOTER */
+.footer {
+  padding: 0 15%;
+}

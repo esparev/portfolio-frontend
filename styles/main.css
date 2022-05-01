@@ -91,7 +91,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   padding: 0 20px;
 }
 /* HERO */
@@ -133,6 +133,7 @@ main {
 
 /* EXPERIENCE */
 .experience {
+  width: 100%;
   margin: 32px 0;
   color: var(--cultured);
 }
@@ -164,6 +165,7 @@ main {
 }
 .form__title {
   width: 100%;
+  max-width: 344px;
   text-align: start;
   color: var(--cultured);
 }
@@ -177,6 +179,7 @@ main {
   border-radius: 4px;
   background-color: var(--cultured-dark);
   font-family: var(--dm-sans);
+  font-size: 1.6rem;
   color: var(--cultured);
 }
 .form__input--message {
@@ -192,12 +195,13 @@ main {
   border-radius: 4px;
   background-color: var(--cultured-dark);
   font-family: var(--dm-sans);
-  font-size: 1.5rem; /* 1.5rem = 15px */
+  font-size: 1.6rem;
   color: var(--cultured);
 }
 .form .button--red {
   display: block;
   width: 136px;
+  font-size: 1.6rem;
 }
 
 /* FOOTER */
@@ -213,6 +217,11 @@ main {
 }
 .footer__socials {
   display: flex;
+  align-items: center;
+}
+.footer__social-container {
+  width: 20px;
+  height: 20px;
 }
 .footer__social-container:nth-child(2) {
   margin: 0 12px;
