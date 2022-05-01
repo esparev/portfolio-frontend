@@ -4,6 +4,8 @@
   --onyx: #444444;
   --eerie-black: #171717;
   --cultured: #ededed;
+  --cultured-light: rgba(237, 237, 237, 0.5);
+  --cultured-dark: rgba(237, 237, 237, 0.1);
   --inter: 'Inter', sans-serif;
   --dm-sans: 'DM Sans', sans-serif;
   --regular: 400;
@@ -36,6 +38,17 @@ a {
   text-decoration: none;
   color: var(--cultured);
 }
+input:focus {
+  outline: none;
+}
+textarea:focus {
+  outline: none;
+}
+button {
+  border: none;
+  font-family: var(--dm-sans);
+  font-weight: var(--bold);
+}
 .button {
   display: inline-block;
   padding: 8px 12px;
@@ -44,7 +57,7 @@ a {
 }
 .button--red {
   background-color: var(--crimson);
-  color: var(--eerie-black);
+  color: var(--cultured);
 }
 .button--white {
   background-color: var(--cultured);
@@ -127,4 +140,45 @@ main {
 }
 .experience__item:last-child {
   margin-bottom: 0;
+}
+
+/* CONTACT */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form__title {
+  width: 344px;
+  text-align: start;
+  color: var(--cultured);
+}
+.form__input--subject {
+  width: 344px;
+  height: 40px;
+  margin: 16px 0;
+  padding: 0 16px;
+  border: 2px solid var(--cultured);
+  border-radius: 4px;
+  background-color: var(--cultured-dark);
+  font-family: var(--dm-sans);
+  color: var(--cultured);
+}
+.form__input--message {
+  max-height: 100px;
+  min-height: 40px;
+  max-width: 344px;
+  min-width: 344px;
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 2px solid var(--cultured);
+  border-radius: 4px;
+  background-color: var(--cultured-dark);
+  font-family: var(--dm-sans);
+  font-size: 1.5rem; /* 1.5rem = 15px */
+  color: var(--cultured);
+}
+.form .button--red {
+  display: block;
+  width: 136px;
 }
