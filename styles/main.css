@@ -23,6 +23,7 @@
 html {
   font-family: var(--dm-sans);
   font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -50,6 +51,9 @@ button {
   border: none;
   font-family: var(--dm-sans);
   font-weight: var(--bold);
+}
+button:hover {
+  cursor:pointer;
 }
 .button {
   display: inline-block;
